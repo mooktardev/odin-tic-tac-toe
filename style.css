@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background: linear-gradient(245deg, #b6c1fd, #a7f0d7, #f3b0b0);
+}
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: .2s;
+}
+.animate__animated.animate__heartBeat {
+    -o-animate-daley: .4s;
+    --animate-duration: 2s;
+}
+
+.wrapper {
+    max-width: 700px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1.5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.wrapper.overlay {
+    filter: blur(4px);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.content {
+    overflow: hidden;
+    background: none;
+    border-radius: .5rem;
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content .cell {
+    width: 120px;
+    height: 120px;
+    font-size: 3rem;
+    font-weight: 700;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content .cell::selection {
+    background: none;
+}
+
+.control {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control .status {
+    font-weight: 400;
+}
+
+button {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    background-color: rgb(212, 4, 4);
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: rgb(231, 49, 49);
+}
+
+
+/* The Modal (background) */
+.modal {
+    width: 100vw;
+    height: 100vh;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    background-color: #fefefe;
+    margin:  15% auto;
+    padding: 3rem;
+    border: 1px solid #888;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* Modal Text */
+.modal-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
