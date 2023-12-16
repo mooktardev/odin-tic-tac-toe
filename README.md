@@ -6,7 +6,7 @@ Tic Tac Toe game is an assignement from The Odin Project. We’re making a Tic T
 
 
 ## Demo
-[Live preview](https://odin-library-gamma.vercel.app/)
+[Live preview](https://odin-tic-tac-toe-mkt.vercel.app/)
 
 ## Contribution
 Pull requests are welcome. For major changes, please open an issue first
